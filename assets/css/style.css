@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Mukta","Lato", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000;
+    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.75),rgba(0, 154, 67, 0.8)), url('../images/ireland-outline.png');
+    background-size: auto;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255, 130, 0, 0.25);
+    width: 55%;
+    overflow: hidden;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #009a44;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 32px;
+    font-family: inherit;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: #ff8200;
+}
+
+button:focus {
+    outline: none;
+}

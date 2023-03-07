@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&family=Montserrat:ital,wght@1,300&family=Mukta:wght@500&family=Nunito:ital,wght@1,300;1,400&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Quiz App</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <main class="container" id="quiz">
+        <div class="header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a"
+                    class="answer">
+                    <label for="a" id="a_question">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b"
+                    class="answer">
+                    <label for="b" id="b_question">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c"
+                    class="answer">
+                    <label for="c" id="c_question">Question</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d"
+                    class="answer">
+                    <label for="d" id="d_question">Question</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </main>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
