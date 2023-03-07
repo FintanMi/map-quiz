@@ -22,6 +22,14 @@ const quizData = [
         c: "Offaly",
         d: "Meath",
         correct: "a",
+    },
+    {
+        question: "What county is known as the 'Dolmen County'?",
+        a: "Carlow",
+        b: "Down",
+        c: "Galway",
+        d: "Mayo",
+        correct: "a",
     }
 ];
 
