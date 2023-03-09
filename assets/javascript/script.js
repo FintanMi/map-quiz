@@ -1,3 +1,4 @@
+// Add quiz questions and answers
 const quizData = [
     {
         question: "What county is known as the 'Rebel County'?",
@@ -33,6 +34,7 @@ const quizData = [
     }
 ];
 
+// bring in questions, answers and submit button
 const quiz = document.getElementById('quiz')
 const answerElement = document.querySelectorAll('.answer')
 const questionElement = document.getElementById('question')
@@ -42,9 +44,11 @@ const c_text = document.getElementById('c_question')
 const d_text = document.getElementById('d_question')
 const submitBtn = document.getElementById('submit')
 
+// create variable that starts at first quiz and initialise scores to zero
 let currentQuiz = 0
 let score = 0
 
+// get current quiz data
 loadQuiz()
 
 function loadQuiz() {
@@ -59,6 +63,7 @@ function loadQuiz() {
     d_text.innerText = currentQuizData.d
 }
 
+// deselect question before moving onto next question
 function deselectAnswers() {
     answerElement.forEach(answerElement => answerElement.checked = false)
 }
@@ -75,18 +80,22 @@ function getSelected() {
     return answer
 }
 
+// check answer, increment score and go to next question
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
 
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
             score++
+            incrementScore();
+        } else {
+            incrementwrongAnswer();
         }
 
         currentQuiz++
 
         if (currentQuiz < quizData.length) {
-            loadQuiz()
+            loadQuiz();
         } else {
             quiz.innerHTML = `
                 <h2>You answered ${score}
@@ -97,3 +106,23 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+
+
+
+/**
+ * Gets the current score from the DOM & increments it by 1
+ */
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
+}
+
+/**
+ * Gets the number of wrong answers from the DOM & increments it by 1
+ */
+function incrementwrongAnswer() {
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
+}

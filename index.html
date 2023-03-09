@@ -11,39 +11,42 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <main class="container" id="quiz">
-        <div class="header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a"
-                    class="answer">
-                    <label for="a" id="a_question">Question</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="b"
-                    class="answer">
-                    <label for="b" id="b_question">Question</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="c"
-                    class="answer">
-                    <label for="c" id="c_question">Question</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="d"
-                    class="answer">
-                    <label for="d" id="d_question">Question</label>
-                </li>
-            </ul>
+    <main>
+        <div class="container" id="quiz">
+            <div class="header">
+                <h2 id="question">Question Text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a"
+                        class="answer">
+                        <label for="a" id="a_question">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b"
+                        class="answer">
+                        <label for="b" id="b_question">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c"
+                        class="answer">
+                        <label for="c" id="c_question">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d"
+                        class="answer">
+                        <label for="d" id="d_question">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
         </div>
-        <button id="submit">Submit</button>
+        <div class="score-area">
+            <p class="scores">Correct Answers <span id="score">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        </div>
         
     </main>
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-    </div>
+    
     <script src="assets/javascript/script.js"></script>
 </body>
 </html>
