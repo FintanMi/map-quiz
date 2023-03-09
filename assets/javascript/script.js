@@ -31,6 +31,54 @@ const quizData = [
         c: "Galway",
         d: "Mayo",
         correct: "a",
+    },
+    {
+        question: "What county is known as the 'Breifne/Brefni County'?",
+        a: "Carlow",
+        b: "Cavan",
+        c: "Dublin",
+        d: "Cork",
+        correct: "b",
+    },
+    {
+        question: "What county is known as the 'Marble County'?",
+        a: "Fermanagh",
+        b: "Leitrim",
+        c: "Kilkenny",
+        d: "Louth",
+        correct: "c",
+    },
+    {
+        question: "What county is known as the 'Wee County'?",
+        a: "West Meath",
+        b: "Longford",
+        c: "Wexford",
+        d: "Louth",
+        correct: "d",
+    },
+    {
+        question: "What county is known as the 'Treaty County'?",
+        a: "Sligo",
+        b: "Limerick",
+        c: "Wicklow",
+        d: "Monaghan",
+        correct: "b",
+    },
+    {
+        question: "What county is known as the 'Royal County'?",
+        a: "Meath",
+        b: "West Meath",
+        c: "Donegal",
+        d: "Wexford",
+        correct: "a",
+    },
+    {
+        question: "What county is known as the 'Yeats County'?",
+        a: "Derry",
+        b: "Roscommon",
+        c: "Sligo",
+        d: "Kildare",
+        correct: "c",
     }
 ];
 
@@ -80,7 +128,7 @@ function getSelected() {
     return answer
 }
 
-// check answer, increment correct & wrong scores and go to next question
+// check answer, increment correct & wrong scores, increment progress bar and go to next question
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
 
