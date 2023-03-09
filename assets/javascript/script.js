@@ -80,7 +80,7 @@ function getSelected() {
     return answer
 }
 
-// check answer, increment score and go to next question
+// check answer, increment correct & wrong scores and go to next question
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
 
@@ -93,6 +93,13 @@ submitBtn.addEventListener('click', () => {
         }
 
         currentQuiz++
+        currentActive++
+
+        if (currentActive > circles.length) {
+            currentActive = circles.length
+        }
+
+        updates()
 
         if (currentQuiz < quizData.length) {
             loadQuiz();
@@ -106,8 +113,6 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
-
-
 
 /**
  * Gets the current score from the DOM & increments it by 1
@@ -125,4 +130,25 @@ function incrementScore() {
 function incrementwrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+}
+
+// make progress bar interactive 
+const progress = document.getElementById("progress")
+const circles = document.querySelectorAll(".circle")
+
+let currentActive = 1
+
+function updates() {
+    circles.forEach((circle, index) => {
+        if (index < currentActive) {
+            circle.classList.add('active')
+        } else {
+            circle.classList.remove('active')
+        }
+    })
+
+    const actives = document.querySelectorAll('.active')
+
+    progress.style.width = (actives.length - 1) / (circles.length - 1)
+    * 100 + "%"
 }

@@ -18,6 +18,62 @@ body {
     background-size: auto;
     background-position: center;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+.progress-container {
+    text-align: center;
+}
+
+.progress-bar {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 40rem;
+    max-width: 100%;
+}
+
+.progress-bar::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.circle {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    transition: .4sec ease;
+}
+
+.circle.active {
+    border-color: #000;
 }
 
 .container {
