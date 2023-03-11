@@ -21,6 +21,18 @@ body {
     overflow: hidden;
 }
 
+.header-logo {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  padding: 1rem;
+  max-height: 7rem;
+}
+
 .map{
   color: #fff;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
