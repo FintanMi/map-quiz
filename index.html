@@ -12,61 +12,15 @@
 </head>
 <body>
     <main>
-        <div class="neon-container">
-            <h1 class="neon-text"><span>I</span>re<span>land</span></h1>
-        </div>
-        <div class="glitch-container">
-            <h2 class="glitch" data-text="glitch"><span class="fast-flicker">C</span>ou<span class="flicker">nty</span> <br><span class="fast-flicker">Qui</span>z</h2>
-        </div>
-        
-        <div class="progress-container">
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
-                <div class="circle active">1</div>
-                <div class="circle">2</div>
-                <div class="circle">3</div>
-                <div class="circle">4</div>
-                <div class="circle">5</div>
-                <div class="circle">6</div>
-                <div class="circle">7</div>
-                <div class="circle">8</div>
-                <div class="circle">9</div>
-                <div class="circle">10</div>
+        <div class="intro-container">
+            <h1 class="map">Irish County Names</h1>
+            <p class="intro">Did you know all counties in Ireland have their own nickname?<br>
+            Click play and see how many you know!</p>
+
+            <div class="play-container">
+                <a href="quiz.html" class="play-btn">Play Now</a>
             </div>
         </div>
-        <div class="container" id="quiz">
-            <div class="header">
-                <h2 id="question">Question Text</h2>
-                <ul>
-                    <li>
-                        <input type="radio" name="answer" id="a"
-                        class="answer">
-                        <label for="a" id="a_question">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="b"
-                        class="answer">
-                        <label for="b" id="b_question">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="c"
-                        class="answer">
-                        <label for="c" id="c_question">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="d"
-                        class="answer">
-                        <label for="d" id="d_question">Question</label>
-                    </li>
-                </ul>
-            </div>
-            <button id="submit">Submit</button>
-        </div>
-        <div class="score-area">
-            <p class="scores">Correct Answers <span id="score">0</span></p>
-            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        </div>
-        
     </main>
     
     <script src="assets/javascript/script.js"></script>

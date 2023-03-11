@@ -21,13 +21,39 @@ body {
     overflow: hidden;
 }
 
+.map{
+  color: #fff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
+  text-transform: uppercase;
+}
+
+.play-container {
+  margin: 2rem 0;
+  animation: blink linear infinite 2s;
+}
+
+.play-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.play-btn:focus {
+  outline: none;
+}
+
 .progress-container {
     text-align: center;
 }
 
 .progress-bar {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     position: relative;
     margin-bottom: 2rem;
@@ -190,39 +216,39 @@ h1 {
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 10px 3px #000;
 }
 
-  @keyframes blink {
-    78% {
-      color: inherit;
-      text-shadow: inherit;
-    }
-    79%{
-       color: #ff8200;
-    }
-    80% {
-      
-      text-shadow: none;
-    }
-    81% {
-      color: inherit;
-      text-shadow: inherit;
-    }
-    82% {
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+   }
+   79%{
       color: #ff8200;
-      text-shadow: none;
-    }
-    83% {
-      color: inherit;
-      text-shadow: inherit;
-    }
-    92% {
-      color: #ff8200;
-      text-shadow: none;
-    }
-    92.5% {
-      color: inherit;
-      text-shadow: inherit;
-    }
+   }
+   80% {
+     
+     text-shadow: none;
+   }
+   81% {
+     color: inherit;
+     text-shadow: inherit;
+   }
+   82% {
+     color: #ff8200;
+    text-shadow: none;
   }
+  83% {
+     color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #ff8200;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
 
 .flicker {
 animation: shine 2s forwards, blink 3s 2s infinite;
@@ -243,130 +269,130 @@ animation: shine 2s forwards, blink 10s 1s infinite;
         -0.2rem 0.1rem 1rem #ff8200, 0.2rem 0.1rem 1rem #ff8200,
         0 -0.5rem 2rem #ff8200, 0 0.5rem 3rem #ff8200;
     }
+}
+  
+@keyframes flicker {
+  from {
+    opacity: 1;
   }
-  
-  @keyframes flicker {
-    from {
-      opacity: 1;
-    }
-  
-    4% {
-      opacity: 0.9;
-    }
-  
-    6% {
-      opacity: 0.85;
-    }
-  
-    8% {
-      opacity: 0.95;
-    }
-  
-    10% {
-      opacity: 0.9;
-    }
-  
-    11% {
-      opacity: 0.922;
-    }
-  
-    12% {
-      opacity: 0.9;
-    }
-  
-    14% {
-      opacity: 0.95;
-    }
-  
-    16% {
-      opacity: 0.98;
-    }
-  
-    17% {
-      opacity: 0.9;
-    }
-  
-    19% {
-      opacity: 0.93;
-    }
-  
-    20% {
-      opacity: 0.99;
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    26% {
-      opacity: 0.94;
-    }
-  
-    28% {
-      opacity: 0.98;
-    }
-  
-    37% {
-      opacity: 0.93;
-    }
-  
-    38% {
-      opacity: 0.5;
-    }
-  
-    39% {
-      opacity: 0.96;
-    }
-  
-    42% {
-      opacity: 1;
-    }
-  
-    44% {
-      opacity: 0.97;
-    }
-  
-    46% {
-      opacity: 0.94;
-    }
-  
-    56% {
-      opacity: 0.9;
-    }
-  
-    58% {
-      opacity: 0.9;
-    }
-  
-    60% {
-      opacity: 0.99;
-    }
-  
-    68% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.9;
-    }
-  
-    72% {
-      opacity: 0.95;
-    }
-  
-    93% {
-      opacity: 0.93;
-    }
-  
-    95% {
-      opacity: 0.95;
-    }
-  
-    97% {
-      opacity: 0.93;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+   4% {
+     opacity: 0.9;
+   }
+
+   6% {
+     opacity: 0.85;
+   }
+
+   8% {
+     opacity: 0.95;
+   }
+
+   10% {
+     opacity: 0.9;
+   }
+
+   11% {
+     opacity: 0.922;
+   }
+
+   12% {
+     opacity: 0.9;
+   }
+
+   14% {
+     opacity: 0.95;
+   }
+
+  16% {
+    opacity: 0.98;
   }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+   24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+   }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+     opacity: 0.93;
+   }
+
+  to {
+    opacity: 1;
+  }
+}
