@@ -408,3 +408,75 @@ animation: shine 2s forwards, blink 10s 1s infinite;
     opacity: 1;
   }
 }
+
+/* for screen sizes 1100px wide and down 1100px/16px = 68.75rem */
+
+@media screen and (max-width: 68.75rem) {
+  .header-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    left: 44.7%;
+    transform: translateY(-10%);
+  }
+
+  .neon-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    left: 20%;
+    transform: translateY(-10%);
+  }
+
+  .glitch-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 13%;
+    left: 65%;
+    transform: translateY(-10%);
+  }
+}
+
+/* for screen sizes 500px wide and down. 500px/16px = 31.25rem */
+
+@media screen and (max-width: 31.25rem) {
+  .header-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 11%;
+    left: 40%;
+    transform: translateY(-10%);
+  }
+
+  .neon-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3%;
+    left: 30%;
+    transform: translateY(-10%);
+  }
+
+  .glitch-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 76%;
+    left: 32%;
+    transform: translateY(-10%);
+  }
+
+  .container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .progress-bar {
+    position: absolute;
+    flex-wrap: wrap;
+  }
+}

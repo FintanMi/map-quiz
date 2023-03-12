@@ -29,27 +29,27 @@ body {
 }
 
 .map{
-    color: #fff;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
+  color: #fff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
   
 .play-container {
-margin: 2rem 0;
-animation: blink linear infinite 2s;
+  margin: 2rem 0;
+  animation: blink linear infinite 2s;
 }
 
 .play-btn {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
-    animation: flicker 1.5s infinite alternate;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8200, 0 0 0.5em #ff8200, 0 0 0.1em #ff8200, 0 8px 3px #000;
+  animation: flicker 1.5s infinite alternate;
 }
   
 .play-btn:focus {
@@ -57,157 +57,174 @@ animation: blink linear infinite 2s;
 }
 
 h1 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 p {
-    font-size: 1.3rem;
-    text-align: center;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .flicker {
-    animation: shine 2s forwards, blink 3s 2s infinite;
-    }
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
       
-    .fast-flicker {
-    animation: shine 2s forwards, blink 10s 1s infinite;
-    } 
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+} 
     
-    @keyframes shine {
-        0% {
-          color: #ff8200;
-          text-shadow: none;
-        }
-        100% {
-          color: #fff;
-          text-shadow: 0 0 0.6rem #ff8200, 0 0 1.5rem #ff8200,
-            -0.2rem 0.1rem 1rem #ff8200, 0.2rem 0.1rem 1rem #ff8200,
-            0 -0.5rem 2rem #ff8200, 0 0.5rem 3rem #ff8200;
-        }
-    }
+@keyframes shine {
+  0% {
+    color: #ff8200;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0.6rem #ff8200, 0 0 1.5rem #ff8200,
+      -0.2rem 0.1rem 1rem #ff8200, 0.2rem 0.1rem 1rem #ff8200,
+      0 -0.5rem 2rem #ff8200, 0 0.5rem 3rem #ff8200;
+  }
+}
       
-    @keyframes flicker {
-      from {
-        opacity: 1;
-      }
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+   
+  6% {
+    opacity: 0.85;
+  }
+   
+  8% {
+    opacity: 0.95;
+  }
     
-       4% {
-         opacity: 0.9;
-       }
+  10% {
+    opacity: 0.9;
+  }
     
-       6% {
-         opacity: 0.85;
-       }
+  11% {
+    opacity: 0.922;
+  }
     
-       8% {
-         opacity: 0.95;
-       }
+  12% {
+    opacity: 0.9;
+  }
     
-       10% {
-         opacity: 0.9;
-       }
+  14% {
+    opacity: 0.95;
+  }
     
-       11% {
-         opacity: 0.922;
-       }
+  16% {
+    opacity: 0.98;
+  }
     
-       12% {
-         opacity: 0.9;
-       }
+  17% {
+    opacity: 0.9;
+  }
     
-       14% {
-         opacity: 0.95;
-       }
+  19% {
+    opacity: 0.93;
+  }
     
-      16% {
-        opacity: 0.98;
-      }
+  20% {
+    opacity: 0.99;
+  }
     
-      17% {
-        opacity: 0.9;
-      }
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
     
-      19% {
-        opacity: 0.93;
-      }
+  28% {
+    opacity: 0.98;
+  }
     
-      20% {
-        opacity: 0.99;
-      }
+  37% {
+    opacity: 0.93;
+  }
     
-       24% {
-        opacity: 1;
-      }
+  38% {
+    opacity: 0.5;
+  }
     
-      26% {
-        opacity: 0.94;
-      }
+  39% {
+    opacity: 0.96;
+  }
     
-      28% {
-        opacity: 0.98;
-      }
+  42% {
+    opacity: 1;
+  }
     
-      37% {
-        opacity: 0.93;
-      }
+  44% {
+    opacity: 0.97;
+  }
     
-      38% {
-        opacity: 0.5;
-      }
+  46% {
+    opacity: 0.94;
+  }
     
-      39% {
-        opacity: 0.96;
-      }
+  56% {
+    opacity: 0.9;
+  }
     
-      42% {
-        opacity: 1;
-      }
+  58% {
+    opacity: 0.9;
+  }
     
-      44% {
-        opacity: 0.97;
-      }
+  60% {
+    opacity: 0.99;
+  }
     
-      46% {
-        opacity: 0.94;
-      }
+  68% {
+    opacity: 1;
+  }
     
-      56% {
-        opacity: 0.9;
-      }
+  70% {
+     opacity: 0.9;
+  }
     
-      58% {
-        opacity: 0.9;
-      }
+  72% {
+    opacity: 0.95;
+  }
     
-      60% {
-        opacity: 0.99;
-      }
+  93% {
+    opacity: 0.93;
+  }
     
-      68% {
-        opacity: 1;
-      }
+  95% {
+    opacity: 0.95;
+  }
     
-      70% {
-        opacity: 0.9;
-       }
+  97% {
+     opacity: 0.93;
+  }
     
-      72% {
-        opacity: 0.95;
-      }
-    
-      93% {
-        opacity: 0.93;
-      }
-    
-      95% {
-        opacity: 0.95;
-      }
-    
-      97% {
-         opacity: 0.93;
-       }
-    
-      to {
-        opacity: 1;
-      }
-    }
+  to {
+    opacity: 1;
+  }
+}
+
+/* for screen sizes 500px wide and down. 500px/16px = 31.25rem */
+
+@media screen and (max-width: 31.25rem) {
+  .header {
+    display: block;
+    text-align: center;
+    /* top: 15%;
+    left: 40%;
+    transform: translateY(-10%); */
+  }
+
+  .map {
+    display: inline-flex;
+    text-align: center;
+  }
+}
