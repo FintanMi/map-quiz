@@ -465,18 +465,51 @@ animation: shine 2s forwards, blink 10s 1s infinite;
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 76%;
+    top: 80%;
     left: 32%;
     transform: translateY(-10%);
   }
 
   .container {
-    width: 100vw;
+    max-width: 100vw;
     margin: 0 auto;
   }
 
-  .progress-bar {
-    position: absolute;
-    flex-wrap: wrap;
+  .progress-container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    max-width: 100vw;
   }
+
+  .circle {
+    display: none;
+  }
+}
+
+.loop-container {
+  position: fixed;
+  top: 90%;
+  left: 25%;
+  width: 50%;
+  height: 1.5rem;
+  overflow: hidden;
+  border: 1px soild #000;
+}
+
+.loops {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4000px;
+  display: flex;
+  will-change: transform;
+}
+
+.loop-item {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
 }
