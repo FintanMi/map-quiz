@@ -162,8 +162,6 @@ submitBtn.addEventListener('click', () => {
     }
 })
 
-
-
 /**
  * Gets the current score from the DOM & increments it by 1
  */
