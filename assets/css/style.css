@@ -567,3 +567,23 @@ animation: shine 2s forwards, blink 10s 1s infinite;
     display: none;
   }
 }
+
+.finish-container {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  border: 2px solid #ff8200;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  /* text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff, 0 0 0.5em #fff, 0 0 0.1em #fff, 0 8px 3px #000; */
+};
+
+.finish-container a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.play-again-btn {
+  text-decoration: none;
+
+}
