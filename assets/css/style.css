@@ -60,8 +60,24 @@ body {
   outline: none;
 }
 
+/* .timer {
+  background-color: #009a44;
+  height: 4px;
+  width: 100%;
+  animation: grow 6s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+} */
+
 .progress-container {
     text-align: center;
+    display: flex;
+    margin-top: 1rem;
 }
 
 .progress-bar {
@@ -114,12 +130,76 @@ body {
     border-color: #000;
 }
 
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prefix, .counter-number {
+  font-size: 1.4rem;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: .15rem solid #ff8200;
+  border-radius: .8rem;
+}
+
+#progress {
+  height: 1.8rem;
+  background-color: #ff8200;
+  width: 0%;
+  border-radius: .6rem;
+}
+
 .container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(255, 130, 0, 0.6);
-    width: 40rem;
-    overflow: hidden;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.container-choice {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 10px;
+}
+
+.container-choice:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0, 154, 68, 0.65);
+  transform: translateY(-2px);
+  transition: transform 150ms;
+}
+
+.choice-item {
+  padding: 10px;
+  margin: auto 0;
+  background-color: #ff8200;
+  color: #000;
+  text-align: center;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100;
+}
+
+.correctans {
+  background-color: #009a44;
+}
+
+.incorrectans {
+  background-color: rgb(194, 13, 13);
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(255, 130, 0, 0.6);
+  width: 40rem;
+  overflow: hidden;
 }
 
 .header {
@@ -486,30 +566,4 @@ animation: shine 2s forwards, blink 10s 1s infinite;
   .circle {
     display: none;
   }
-}
-
-.loop-container {
-  position: fixed;
-  top: 90%;
-  left: 25%;
-  width: 50%;
-  height: 1.5rem;
-  overflow: hidden;
-  border: 1px soild #000;
-}
-
-.loops {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 4000px;
-  display: flex;
-  will-change: transform;
-}
-
-.loop-item {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
 }

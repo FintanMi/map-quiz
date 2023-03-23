@@ -29,7 +29,7 @@
             <h2 class="glitch" data-text="glitch"><span class="fast-flicker">C</span>ou<span class="flicker">nty</span> <br><span class="fast-flicker">Qui</span>z</h2>
         </div>
         
-        <div class="progress-container">
+        <!-- <div class="progress-container">
             <div class="progress-bar">
                 <div class="progress" id="progress"></div>
                 <div class="circle active">1</div>
@@ -43,8 +43,41 @@
                 <div class="circle">9</div>
                 <div class="circle">10</div>
             </div>
+        </div> -->
+        <div class="progress-container">
+            <div class="progress-counter">
+                <p id="progressText" class="prefix">Question</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="progress-counter">
+                <p class="prefix">Score</p>
+                <p class="counter-number" id="scores">0</p>
+            </div>
         </div>
         <div class="container" id="quiz">
+            <div class="game" id="game">
+                <h2 id="question">What is the answer to the following question?</h2>
+                <div class="container-choice">
+                    <p class="choice-item">A</p>
+                    <p class="choice-text" data-number="1">Choice 1</p>
+                </div>
+                <div class="container-choice">
+                    <p class="choice-item">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="container-choice">
+                    <p class="choice-item">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="container-choice">
+                    <p class="choice-item">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container" id="quiz">
             <div class="header">
                 <h2 id="question">Question Text</h2>
                 <ul>
@@ -71,13 +104,14 @@
                 </ul>
             </div>
             <button id="submit">Submit</button>
-        </div>
-        <div class="score-area">
+        </div> -->
+        <!-- <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        </div>
+        </div> -->
     </main>
     
-    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/script.js"></script> -->
 </body>
 </html>

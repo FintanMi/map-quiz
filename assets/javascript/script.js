@@ -83,26 +83,27 @@ const quizData = [
 ];
 
 // bring in questions, answers and submit button
-const quiz = document.getElementById('quiz')
-const answerElement = document.querySelectorAll('.answer')
-const questionElement = document.getElementById('question')
-const a_text = document.getElementById('a_question')
-const b_text = document.getElementById('b_question')
-const c_text = document.getElementById('c_question')
-const d_text = document.getElementById('d_question')
-const submitBtn = document.getElementById('submit')
+const quiz = document.getElementById('quiz');
+const answerElement = document.querySelectorAll('.answer');
+const questionElement = document.getElementById('question');
+const a_text = document.getElementById('a_question');
+const b_text = document.getElementById('b_question');
+const c_text = document.getElementById('c_question');
+const d_text = document.getElementById('d_question');
+const submitBtn = document.getElementById('submit');
+
 
 // create variable that starts at first quiz and initialise scores to zero
-let currentQuiz = 0
-let score = 0
+let currentQuiz = 0;
+let score = 0;
 
 // get current quiz data
-loadQuiz()
+loadQuiz();
 
 function loadQuiz() {
     deselectAnswers()
 
-    const currentQuizData = quizData[currentQuiz]
+    let currentQuizData = quizData[currentQuiz]
 
     questionElement.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
@@ -113,7 +114,7 @@ function loadQuiz() {
 
 // deselect question before moving onto next question
 function deselectAnswers() {
-    answerElement.forEach(answerElement => answerElement.checked = false)
+    answerElement.forEach(answerElement => answerElement.checked = false);
 }
 
 function getSelected() {
@@ -130,14 +131,16 @@ function getSelected() {
 
 // check answer, increment correct & wrong scores, increment progress bar and go to next question
 submitBtn.addEventListener('click', () => {
-    const answer = getSelected()
+    let answer = getSelected()
 
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
-            score++
+            score++;
             incrementScore();
+            // document.querySelector('.answer').style.color = '#009a44';
         } else {
             incrementwrongAnswer();
+            // document.querySelector('.answer').style.backgroundColor = '#dc3545';
         }
 
         currentQuiz++
@@ -147,7 +150,7 @@ submitBtn.addEventListener('click', () => {
             currentActive = circles.length
         }
 
-        updates()
+        updateProgressBar()
 
         if (currentQuiz < quizData.length) {
             loadQuiz();
@@ -169,7 +172,6 @@ function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
 }
 
 /**
@@ -186,7 +188,7 @@ const circles = document.querySelectorAll(".circle")
 
 let currentActive = 1
 
-function updates() {
+function updateProgressBar() {
     circles.forEach((circle, index) => {
         if (index < currentActive) {
             circle.classList.add('active')
@@ -197,7 +199,25 @@ function updates() {
 
     const actives = document.querySelectorAll('.active')
 
-    progress.style.width = (actives.length - 1) / (circles.length - 1)
-    * 100 + "%"
+    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + "%"
 }
 
+
+
+// countdown timer function
+// let idx = 1;
+
+// function updateQuestion() {
+//     const {question, a, b, c, d, correct} = quizData[idx]
+
+//     answerElement.innerHTML = correct;
+//     questionElement.innerHTML = question;
+//     a_text.innerHTML = a;
+//     b_text.innerHTML = b;
+//     c_text.innerHTML = c;
+//     d_text.innerHTML = d;
+
+//     idx++;
+// }
+
+// setInterval(updateQuestion(), 6000);

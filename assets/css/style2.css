@@ -229,7 +229,7 @@ p {
   }
 }
 
-/* style sign up btn */
+/* style sign up & instruction btn */
 .cta-modal-btn {
   color: #009a44;
   font-size: 1.2rem;
@@ -238,6 +238,33 @@ p {
   padding: 8px 20px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.cta-modal-btn:active {
+  transform: scale(0.96);
+}
+
+.cta-modal-instruct-btn {
+  color: #009a44;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* style sign up & instruction container */
+.submit-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
 }
 
 
@@ -252,11 +279,40 @@ p {
   bottom: 0;
 }
 
+.modal-container-instruct {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .modal-container.show-modal {
   display: block;
 }
 
+.modal-container.show-modal-instruct {
+  display: block;
+}
+
 .modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 35rem;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-instruct {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -309,6 +365,16 @@ p {
   border: none;
 }
 
+.close-modal-btn-instruct {
+  background: transparent;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  cursor: pointer;
+  border: none;
+}
+
 .submit-modal-btn {
   color: #000;
   background-color: #ff8200;
@@ -320,6 +386,10 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 10px;
+}
+
+.submit-modal-btn:active {
+  transform: scale(0.96);
 }
 
 /* brings in modal  */
