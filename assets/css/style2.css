@@ -11,6 +11,8 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin: 0 auto 1px auto;
     max-height: 150px;
@@ -20,6 +22,20 @@ body {
     padding: 1rem;
     max-height: 6rem;
     cursor: pointer;
+}
+
+.instruct-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #ff8200;
+  background-color: #fff;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .intro-container {
@@ -212,9 +228,9 @@ p {
   }
 }
 
-/* for screen sizes 500px wide and down. 500px/16px = 31.25rem */
+/* for screen sizes 540px wide and down. 540px/16px = 31.25rem */
 
-@media screen and (max-width: 31.25rem) {
+@media screen and (max-width: 33.75rem) {
   .header {
     display: block;
     text-align: center;
@@ -223,13 +239,21 @@ p {
     transform: translateY(-10%); */
   }
 
-  .map {
+  #quiz {
+    width: 98vw;
+  }
+
+  /* .map {
     display: inline-flex;
     text-align: center;
+  } */
+
+  .neon-container, .glitch-container {
+    display: none;
   }
 }
 
-/* style sign up & instruction btn */
+/* style sign up btn */
 .cta-modal-btn {
   color: #009a44;
   font-size: 1.2rem;
@@ -244,17 +268,7 @@ p {
   transform: scale(0.96);
 }
 
-.cta-modal-instruct-btn {
-  color: #009a44;
-  font-size: 1.2rem;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 8px 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-/* style sign up & instruction container */
+/* style sign up container */
 .submit-btn-container {
   display: flex;
   justify-content: space-between;
@@ -267,19 +281,8 @@ p {
   margin: 0 10px;
 }
 
-
 /* style modal */
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.6);
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.modal-container-instruct {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
   position: fixed;
@@ -293,26 +296,7 @@ p {
   display: block;
 }
 
-.modal-container.show-modal-instruct {
-  display: block;
-}
-
 .modal {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  width: 35rem;
-  animation-name: modalopen;
-  animation-duration: 1s;
-}
-
-.modal-instruct {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -365,16 +349,6 @@ p {
   border: none;
 }
 
-.close-modal-btn-instruct {
-  background: transparent;
-  font-size: 1.6rem;
-  position: absolute;
-  top: 16px;
-  right: 0;
-  cursor: pointer;
-  border: none;
-}
-
 .submit-modal-btn {
   color: #000;
   background-color: #ff8200;
@@ -401,4 +375,20 @@ p {
   to {
     opacity: 1;
   }
+}
+
+/* instructions page */
+
+.instructions-container {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.instructions-container li {
+  text-align: center;
+  list-style: none;
+}
+
+.play-container {
+  text-align: center;
 }

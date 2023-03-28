@@ -5,9 +5,6 @@ const correctScore = document.getElementById('scores');
 const wrongScore = document.getElementById('incorrect');
 const progressLine = document.getElementById('progress');
 
-// const question = document.getElementById('question');
-// const answer = Array.from(document.getElementsByClassName('choice-text'));
-
 let currentQuestion = {};
 let acceptAns = false;
 let score = 0;
@@ -111,6 +108,7 @@ startGame = () => {
 getNewQuestion = () => {
 
     if(availableQuestion.length === 0 || questionCounter > maxQuestions){
+        localStorage.setItem('recentScore', score);
         // go to last page
         return window.location.assign('/finish.html');
     }
@@ -163,3 +161,6 @@ updateScore = num => {
 
 startGame();
 
+const finalScore = document.getElementById('final-score');
+const recentScore = localStorage.getItem('recentScore');
+finalScore.innerText = recentScore;
