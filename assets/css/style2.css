@@ -392,3 +392,18 @@ p {
 .play-container {
   text-align: center;
 }
+
+/* for screen sizes 540px wide and down. 540px/16px = 33.75rem */
+@media screen and (max-width: 33.75rem) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* for screen sizes 420px wide and down. 420px/16px = 26.65rem */
+@media screen and (max-width: 26.65rem) {
+  .intro-container h1 {
+    text-align: center;
+  }
+}
