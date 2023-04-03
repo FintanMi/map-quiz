@@ -2,7 +2,7 @@
 
 Map Quiz is a multiple choice quiz where players are given an Irish county nickname and they have to select the correct county. There are four options on every question, with ten questions in total.
 
-[Map Quiz live link](https://fintanmi.github.io/map-quiz/)
+[Map Quiz](https://fintanmi.github.io/map-quiz/)
 
 ## Features
 
