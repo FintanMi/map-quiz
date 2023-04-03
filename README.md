@@ -11,6 +11,7 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 * Favicon
    * A harp is featured on each page
    * This will provide a visual element for a player to easily identify the page if they have multiple tabs open
+ 
 *Home Page*
 - Game instructions button in the header to explain what the quiz is about
 - Harp icon in the header that the user can click once the quiz has started that will bring them back to the home page
