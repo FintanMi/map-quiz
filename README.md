@@ -128,6 +128,7 @@ Testing was also performed to ensure that when the logo was clicked on the quiz 
   - No errors when put through [JShint validator](https://jshint.com/)
   - Numerous warnings were present regarding const/let/arrow functions/template literal syntax/spread operator
   - Four undefined variables were declared but each one they're used for bringing in the quiz content, progress bar and updating the score
+  
   ![JavaScript Validator Result](docs/readme_images/js-check.JPG)
   
  ## Deployment
