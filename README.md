@@ -24,7 +24,7 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 ![Home Page Image](docs/readme_images/home-page.JPG)
 
 *Sign Up Modal*
-- A modal pops up to with serveral input fields for a player to upload their name, email and password
+- A modal pops up with serveral input fields for a player to upload their name, email and password if they wish to join
 ![Sign Up Modal](docs/readme_images/sign-up-modal.JPG)
 
 *Instructions*
