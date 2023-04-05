@@ -45,9 +45,18 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 - The player will see a play again button that will divert them back to the home page
 
 
-##Wireframes
+## Wireframes
 
 - Home Page
 ![home page wireframe](docs/readme_images/quiz-app-home.JPG)
 ![home page wireframe](docs/readme_images/quiz-app-home-mobile.JPG)
 
+- Sign Up Modal
+![home page wireframe](docs/readme_images/sign-up-modal-mockup.JPG)
+
+- Instructions Page
+![home page wireframe](docs/readme_images/instruction-mockup.JPG)
+
+- Quiz Page
+![home page wireframe](docs/readme_images/quiz-content-mockup.JPG)
+![home page wireframe](docs/readme_images/quiz-content-mobile.JPG)
