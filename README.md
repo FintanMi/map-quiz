@@ -23,6 +23,15 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 - Sign up button that displays a modal, allowing players to sign up in order to get access to the full range of games
 ![Home Page Image](docs/readme_images/home-page.JPG)
 
+*Sign Up Modal*
+- A modal pops up to with serveral input fields for a player to upload their name, email and password
+![Sign Up Modal](docs/readme_images/sign-up-modal.JPG)
+
+*Instructions*
+- Tells players how to play the quiz
+- Button links to the quiz page
+![Instructions Page](docs/readme_images/instructions.JPG)
+
 *Quiz Pages*
 - Question counter with a progress bar to show how many questions have been answered
 - Score counter to show how many questions the player has answered correctly
@@ -30,7 +39,7 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 - Quiz container with the question on top and the four possible answer below
 - The answer will flash green (correct answer) or red (wrong answer) for half a second before changing to the next question
 - The score begins at zero and each correct answer will add ten to their score, meaning the best score a player can acheive is one hundred
-- There is no time limit
+![Quiz Page Image](docs/readme_images/quiz-page.JPG)
 
 *Finish Page*
 - The player will see a play again button that will divert them back to the home page
