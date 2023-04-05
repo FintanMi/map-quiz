@@ -103,3 +103,6 @@ Website behaved as expected.
 
 ### Accessibility
 
+**Lighthouse Report**
+Lighthouse report generated scores ranging from 92 to 100
+![Lighthouse report](docs/readme_images/quiz-lighthouse.JPG)
