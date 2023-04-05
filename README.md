@@ -21,6 +21,7 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 - A brief explanation of what the quiz is about
 - Play button to initiate the quiz
 - Sign up button that displays a modal, allowing players to sign up in order to get access to the full range of games
+![Home Page Image](docs/readme_images/home-page.JPG)
 
 *Quiz Pages*
 - Question counter with a progress bar to show how many questions have been answered
