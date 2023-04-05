@@ -111,4 +111,6 @@ Lighthouse report generated scores ranging from 92 to 100
 **Validator Testing**
 
 -HTML
-
+  - Three errors relating to the same id name been used was highlighted when passed through [W3C validator](https://validator.w3.org)
+  - Changes were implemented
+ ![Home HTML Validator Result](docs/readme_images/quiz-html-check.JPG)
