@@ -60,3 +60,20 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 - Quiz Page
 ![home page wireframe](docs/readme_images/quiz-content-mockup.JPG)
 ![home page wireframe](docs/readme_images/quiz-content-mobile.JPG)
+
+## Technologies
+
+- HTML
+  - The structure of the website was developed using HTML
+- CSS
+  - The Website was styled using custom CSS in external files
+- JavaScript
+  - The game play logic was created using JavaScript in external files
+- GitHub
+  - Source code is hosted on GitHub and delpoyed using Git Pages.
+- Gitpod
+  - Used to commit and push code during the development of the Website
+- Favicon.io
+  - favicon file was created at https://favicon.io/favicon-converter/
+- balsamiq
+  - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
