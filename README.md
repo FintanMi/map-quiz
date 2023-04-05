@@ -77,3 +77,29 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
   - favicon file was created at https://favicon.io/favicon-converter/
 - balsamiq
   - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
+
+## Testing
+
+### Responsiveness
+
+All pages were tested to ensure the layout was correctly displaying the quiz all device sizes down to 280 pixels.
+
+Steps to test:
+
+1. Open browser and navigate to [Quiz App](https://https://fintanmi.github.io/map-quiz/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and set zoom to 50%
+4. Go through each of the device types to ensure the layout is correct
+
+Expected:
+
+Website is responsive on all screen sizes
+No horizontal scroll is present
+No elements overlap
+
+Actual:
+
+Website behaved as expected.
+
+### Accessibility
+
