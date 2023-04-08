@@ -119,7 +119,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuestion.length);
     currentQuestion = availableQuestion[questionIndex];
-    question.innerText = currentQuestion.question;
+    document.getElementById('question').innerText = currentQuestion.question;
 
     answerElement.forEach(choice => {
         const number = choice.dataset['number'];
@@ -160,7 +160,3 @@ updateScore = num => {
 };
 
 startGame();
-
-const finalScore = document.getElementById('final-score');
-const recentScore = localStorage.getItem('recentScore');
-finalScore.innerText = recentScore;

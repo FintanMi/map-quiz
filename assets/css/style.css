@@ -620,6 +620,11 @@ animation: shine 2s forwards, blink 10s 1s infinite;
   flex-direction: column;
 }
 
+.finish-page-container h1 {
+  color: #ff8200;
+  margin-bottom: 1.5rem;
+}
+
 .play-again-btn {
   text-decoration: none;
   color: #ff8200;
