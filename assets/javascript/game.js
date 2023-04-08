@@ -110,7 +110,7 @@ getNewQuestion = () => {
     if(availableQuestion.length === 0 || questionCounter > maxQuestions){
         localStorage.setItem('recentScore', score);
         // go to last page
-        return window.location.assign('/finish.html');
+        return window.location.assign('finish.html');
     }
 
     questionCounter++;
