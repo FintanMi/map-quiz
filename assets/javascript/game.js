@@ -1,8 +1,6 @@
 const answerElement = Array.from(document.getElementsByClassName('choice-text'));
-const questionElement = document.getElementById('question');
 const progress = document.getElementById('progressText');
 const correctScore = document.getElementById('scores');
-const wrongScore = document.getElementById('incorrect');
 const progressLine = document.getElementById('progress');
 
 let currentQuestion = {};
@@ -98,14 +96,14 @@ const quizData = [
 const correctBonus = 10;
 const maxQuestions = 10;
 
-startGame = () => {
+let startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestion = [...quizData];
     getNewQuestion();
 };
 
-getNewQuestion = () => {
+let getNewQuestion = () => {
 
     if(availableQuestion.length === 0 || questionCounter > maxQuestions){
         localStorage.setItem('recentScore', score);
@@ -154,7 +152,7 @@ answerElement.forEach(choice => {
     });
 });
 
-updateScore = num => {
+let updateScore = num => {
     score += num;
     correctScore.innerText = score;
 };

@@ -591,7 +591,17 @@ animation: shine 2s forwards, blink 10s 1s infinite;
 
 @media screen and (max-width: 26.65rem) {
   .progress-container {
-    display: none;
+    display: block;
+  }
+
+  .progress-counter {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+  }
+
+  .prefix {
+    margin-right: 1rem;
   }
 }
 
@@ -600,6 +610,27 @@ animation: shine 2s forwards, blink 10s 1s infinite;
 @media screen and (max-width: 23.75rem) {
   .header-logo {
     display: none;
+  }
+
+  .progress-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding-left: 1.2rem;
+    position: inherit;
+    overflow: hidden;
+  }
+}
+
+/* for screen sizes 300px wide and down. 300px/16px = 18.75rem */
+@media screen and (max-width: 18.75rem) {
+  .progress-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  .prefix, .counter-number {
+    font-size: 1.2rem;
   }
 }
 
