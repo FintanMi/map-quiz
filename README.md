@@ -170,4 +170,4 @@ The project will now have been cloned on your local machine for use.
 
 ## Credits
 
-* Some JavaScript was used from the Udemy courses '50 Projects in 50 Days - HTML, CSS and JavaScript' and '20 Web Projects with Vanilla JavaScript'
+* Some JavaScript was used from the Udemy courses '50 Projects in 50 Days - HTML, CSS and JavaScript' -> Day 46: Quiz App and '20 Web Projects with Vanilla JavaScript' -> 6: Menu Slider & Modal | DOM & CSS.
