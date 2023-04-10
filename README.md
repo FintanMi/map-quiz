@@ -117,6 +117,10 @@ Manual tests were performed to ensure the each answer highlighted green or red d
 
 Testing was also performed to ensure that when the logo was clicked on the quiz pages it brought the player back to the home page. This was done by clicking on the logo when a new question loaded.
 
+**Bugs**
+
+The finish page wasn't showing up when the site was viewed from GitHub but would run as it was programmed to when ran via GitPod. The issue turned out to be a forward slash in the game.js file, identified by Gareth McGirr (my mentor), and when it was removed the quiz ran without any problems.
+
 **Validator Testing**
 
 -HTML
