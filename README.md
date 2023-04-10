@@ -42,6 +42,7 @@ Map Quiz is a multiple choice quiz where players are given an Irish county nickn
 ![Quiz Page Image](docs/readme_images/quiz-page.JPG)
 
 *Finish Page*
+- The players score will appear when the finish page is loaded
 - The player will see a play again button that will divert them back to the home page
 ![Finish Page](docs/readme_images/finish-page.JPG)
 
