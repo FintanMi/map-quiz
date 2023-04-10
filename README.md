@@ -111,7 +111,9 @@ Website behaved as expected.
 Lighthouse report generated scores ranging from 92 to 100
 ![Lighthouse report](docs/readme_images/quiz-lighthouse.JPG)
 
-Manual tests were performed to ensure the each answer highlighted green or red depending on if the correct or incorrect answer was selected before the next question appeared. This was acheived by clicking on each option.
+Testing on the sign up modal was performed by clicking the submit button straight away and making sure users had to enter their details before proceeding to the next page. This takes a player to the thank you page that contains a play now button. Manually clicked the play now button to ensure the user was directed to the first page of the quiz 
+
+Manual tests were performed to ensure the each answer highlighted green or red depending on if the correct or incorrect answer was selected before the next question appeared. This was acheived by clicking on each option. 
 
 Testing was also performed to ensure that when the logo was clicked on the quiz pages it brought the player back to the home page. This was done by clicking on the logo when a new question loaded.
 
